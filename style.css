@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 32px 36px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0b2545;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #0b2545;
+}
+
+
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    border-bottom: 2px solid #e6e9ef;
+    padding-bottom: 14px;
+}
+
+.progressStep {
+    font-size: 12px;
+    font-weight: 600;
+    color: #a0a8b8;
+}
+
+.progressStep.active {
+    color: #2f6fed;
+}
+
+
+.steps {
+    display: none;
+}
+
+.steps.active {
+
+    display: block;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #cfd6e0;
+    border-radius: 6px;
+    background: #fafbfc;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2f6fed;
+    background: #fff;
+}
+
+.theCardInfo {
+    display: flex;
+
+    gap: 14px;
+}
+
+.theStepButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 26px;
+}
+
+button {
+    
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+}
+
+.theNextButtons, .thePayButton {
+    
+    background-color: #2f6fed;
+    color: #fff;
+    flex: 1;
+}
+
+.theNextButtons:hover, .thePayButton:hover {
+    background-color: #2559c9;
+}
+
+.theNextButtons:disabled {
+    background-color: #b9c6e6;
+    cursor: not-allowed;
+}
+
+.theBackButton {
+    background-color: #eef1f6;
+    color: #333;
+}
+
+.theBackButton:hover {
+    background-color: #dfe4ec;
+}
+
+.stepDiscription {
+    font-size: 13px;
+    color: #667085;
+    margin-top: -6px;
+    margin-bottom: 18px;
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.thePlanCards {
+    border: 2px solid #e6e9ef;
+    border-radius: 8px;
+    padding: 16px;
+
+}
+
+.thePlanCards:hover {
+    border-color: #b9c6e6;
+}
+
+.thePlanCards.selected {
+    border-color: #2f6fed;
+    background-color: #eef4ff;
+}
+
+.thePlanCards h3 {
+    margin: 0 0 6px 0;
+    font-size: 15px;
+    color: #0b2545;
+}
+
+.thePlanPrice {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a7f37;
+    margin: 4px 0;
+}
+
+.thePlanDescription {
+    font-size: 13px;
+    color: #667085;
+    margin: 0;
+}
+
+.summeryOfOrder {
+    background-color: #f7f9fc;
+    padding: 14px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#resultMessage {
+    margin-top: 14px;
+    font-weight: 600;
+    text-align: center;
+}
